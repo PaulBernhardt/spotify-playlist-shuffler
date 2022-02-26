@@ -1,0 +1,63 @@
+{
+	"name": "spotify-playlist-shuffler",
+	"version": "1.0.0",
+	"description": "Shuffle a Spotify playlist so playing it in order is random, because the built in shuffle is garbage.",
+	"main": "index.js",
+	"repository": "https://github.com/PaulBernhardt/spotify-playlist-shuffler.git",
+	"author": "Paul Bernhardt <pbernhardt@gmail.com>",
+	"license": "MIT",
+	"private": false,
+	"scripts": {
+		"start": "yarn build && node dist/index.js",
+		"build": "tsc -p tsconfig.json",
+		"test": "jest .",
+		"lint": "eslint ."
+	},
+	"dependencies": {
+		"spotify-web-api-node": "^5.0.2"
+	},
+	"devDependencies": {
+		"@types/jest": "^27.0.1",
+		"@types/node": "^17.0.14",
+		"@typescript-eslint/eslint-plugin": "^4.31.2",
+		"@typescript-eslint/parser": "^4.31.2",
+		"eslint": "^7.32.0",
+		"eslint-config-prettier": "^8.3.0",
+		"jest": "^27.2.1",
+		"prettier": "^2.4.1",
+		"ts-jest": "^27.0.5",
+		"ts-node": "^10.2.1",
+		"typescript": "^4.4.3"
+	},
+	"eslintConfig": {
+		"root": true,
+		"parser": "@typescript-eslint/parser",
+		"plugins": [
+			"@typescript-eslint"
+		],
+		"extends": [
+			"eslint:recommended",
+			"prettier",
+			"plugin:@typescript-eslint/recommended"
+		],
+		"env": {
+			"node": true,
+			"es6": true,
+			"jest": true
+		},
+		"parserOptions": {
+			"sourceType": "script",
+			"ecmaVersion": 9,
+			"ecmaFeatures": {
+				"impliedStrict": false
+			}
+		},
+		"rules": {
+			"no-var": "error",
+			"prefer-const": "error",
+			"prefer-arrow-callback": "error",
+			"no-prototype-builtins": "warn",
+			"require-atomic-updates": "warn"
+		}
+	}
+}

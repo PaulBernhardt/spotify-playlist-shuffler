@@ -1,0 +1,4 @@
+{
+	"$schema": "http://json.schemastore.org/vsls",
+	"hideFiles": [".*", "node_modules", "*config*", "yarn.lock", "package.json", "**/.vscode", "**/.devcontainer", "launch.json"]
+}
