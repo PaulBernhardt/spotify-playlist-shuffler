@@ -9,6 +9,7 @@
 	"private": false,
 	"scripts": {
 		"start": "yarn build && node dist/index.js",
+		"auth": "yarn build && node dist/source/auth.js",
 		"build": "tsc -p tsconfig.json",
 		"test": "jest .",
 		"lint": "eslint ."
@@ -19,6 +20,7 @@
 	"devDependencies": {
 		"@types/jest": "^27.0.1",
 		"@types/node": "^17.0.14",
+		"@types/spotify-web-api-node": "^5.0.7",
 		"@typescript-eslint/eslint-plugin": "^4.31.2",
 		"@typescript-eslint/parser": "^4.31.2",
 		"eslint": "^7.32.0",

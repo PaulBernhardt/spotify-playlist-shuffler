@@ -1,4 +1,4 @@
-import { SpotifyWebApi } from 'spotify-web-api-node';
+import SpotifyWebApi from 'spotify-web-api-node';
 
 const SCOPES = ['user-library-read', 'playlist-modify-private', 'user-read-playback-state'];
 
