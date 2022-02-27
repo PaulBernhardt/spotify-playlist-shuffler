@@ -9,12 +9,13 @@
 	"private": false,
 	"scripts": {
 		"start": "yarn build && node dist/index.js",
-		"auth": "yarn build && node dist/source/auth.js",
+		"auth": "yarn build && node -r dotenv/config dist/auth.js",
 		"build": "tsc -p tsconfig.json",
 		"test": "jest .",
 		"lint": "eslint ."
 	},
 	"dependencies": {
+		"dotenv": "^16.0.0",
 		"spotify-web-api-node": "^5.0.2"
 	},
 	"devDependencies": {
